@@ -1,0 +1,11 @@
+import java.util.*;
+
+public class LoopRandoms_UntilGet37 {
+
+	public static void main(String[] args) {
+	Random randNumGen = new Random();
+	
+	
+	}
+
+}

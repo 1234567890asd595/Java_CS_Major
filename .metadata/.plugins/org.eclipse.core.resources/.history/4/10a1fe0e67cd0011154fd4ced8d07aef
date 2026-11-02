@@ -1,0 +1,26 @@
+import java.util.*;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scn = new Scanner(System.in);
+		
+		String userName;
+		int userMoneyBank = 100;
+		int userMoneyBet = 0;
+		//Money that is bet isn't anymore part of his bank. 
+		
+		System.out.println("Howdey there! Welcom to \"Pasul Le'dut!\" Casino!");
+		System.out.println("***WARNING: You will be taking a risk at being disqualified for testimony at jewish court. ");
+		System.out.println("Playing in the casino is exclusively at the user's personal risk.");
+		
+		System.out.println("On a nicer tone, what is you name?");
+		System.out.print("Enter your name here: ");
+		userName = scn.next();
+		
+		System.out.println("Hello " + userName + "! It's just perfectly stupendous to meet you!");
+	}
+	
+
+}

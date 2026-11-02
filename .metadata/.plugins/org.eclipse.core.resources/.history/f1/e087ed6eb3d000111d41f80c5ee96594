@@ -1,0 +1,57 @@
+import java.util.*;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scn = new Scanner(System.in);
+		Random rndNumGen = new Random();
+
+		String userName;
+		int userMoneyBank = 100;
+		int userMoneyBet = 0;
+		int gambles = 0;
+		int correctGambles = 0;
+		int partialGambles = 0;
+		int worngGambles = 0;
+		int exitToken = 0;
+		//Money that is bet isn't anymore part of his bank. 
+
+		System.out.println("Howdey there! Welcom to \"Pasul Le'dut!\" Casino!");
+		System.out.println("***WARNING: You will be taking a risk at being disqualified for testimony at jewish court. ");
+		System.out.println("Playing in the casino is exclusively at the user's personal risk.");
+
+		System.out.println("On a nicer tone, what is you name?");
+		System.out.print("Enter your name here: ");
+		userName = scn.next();
+
+		System.out.println("Hello " + userName + "! It's just perfectly stupendous to meet you!");
+		System.out.println("You have " + userMoneyBank +"$ to use in this Casino.");
+		System.out.println("The gameplan goes as follows: ");
+		System.out.println("1. You - " + userName + " bet a sum of dough from your money bank");
+		System.out.println("2. You guess a random number between 1 and your Bar Mitsva age.");
+		System.out.println("Now this splits up: \n Correct? The cash you bet quadruples! \n Off by one? Your bet doubles! \n Completely gone bonkers? Lost your betting money, there's a reason that you shouldn't gamble. \n 3. You can play again if you have something left.");
+		System.out.println("----------------------------------Let the Game Begin!------------------------------------------");
+
+		while (userMoneyBank > 0) {
+			System.out.println("You have " + userMoneyBank + "$ in your bank.");
+
+			while (true) {
+				System.out.print("Bet an amount: ");
+				//			not enough money
+				//			illegal bet
+				if (scn.hasNextInt() && (scn.nextInt() >= 0)) {
+					System.out.println("The game sort of starts here");
+				} else {
+					System.out.println("Invalid input! Please type a WHOLE POSITIVE NUMBER, without any decimal or negitive.");
+				}
+
+
+				//			userMoneyBank = userMoneyBank - userMoneyBet;
+			}
+
+		}
+	}
+
+
+}

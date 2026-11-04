@@ -1,3 +1,4 @@
+//to add find all numbers between 40 and 60 and print amount and indexes.
 import java.util.*;
 
 public class Exsersize2 {

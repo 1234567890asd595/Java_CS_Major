@@ -10,15 +10,19 @@ public class Exsersize2 {
 		int[] randomNumbers = new int[15];
 		int[] divisablesByFive = new int[randomNumbers.length];
 
+		//init divisables by 5 array
 		for (int i = 0; i < divisablesByFive.length; i++) {
 			divisablesByFive[i] = -1;
 		}
 
+		// init random number array
 		for (int i = 0; i < randomNumbers.length; i++) {
+			
 			int rndNum = rndGen.nextInt(99) + 1;
 			while (rndNum % 2 == 0) {
 				rndNum = rndGen.nextInt(99) + 1;
 			}
+			
 			randomNumbers[i] = rndNum;
 		}
 

@@ -1,4 +1,5 @@
 //to add find all numbers between 40 and 60 and print amount and indexes.
+//there are some big problems with this code - need to fix them
 import java.util.*;
 
 public class Exsersize2 {
@@ -10,7 +11,7 @@ public class Exsersize2 {
 		int[] divisablesByFive = new int[randomNumbers.length];
 
 		for (int i = 0; i < divisablesByFive.length; i++) {
-			divisablesByFive[i] = 0;
+			divisablesByFive[i] = -1;
 		}
 
 		for (int i = 0; i < randomNumbers.length; i++) {
@@ -28,7 +29,7 @@ public class Exsersize2 {
 		int divisableBy5 = 0;
 		for (int i = 0; i < randomNumbers.length; i++) {
 			if (randomNumbers[i] % 5 == 0) {
-				divisablesByFive[divisableBy5] = 5;
+				divisablesByFive[divisableBy5] = i;
 				divisableBy5++;
 			}
 		}
@@ -36,7 +37,7 @@ public class Exsersize2 {
 		System.out.print("\nThere are " + divisableBy5 + " numbers divisable by 5. \nAt the indexes: ");
 		
 		for (int i = 0; i < divisablesByFive.length; i++) {
-			if (divisablesByFive[i] == 5) {
+			if (divisablesByFive[i] >= 0) {
 				if (i > 0) {
 					System.out.print(", " + i);
 					} else {
@@ -45,5 +46,6 @@ public class Exsersize2 {
 				
 			}
 		}
+		System.out.println("\n");
 	}
 }

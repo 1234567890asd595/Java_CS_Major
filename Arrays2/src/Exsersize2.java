@@ -43,9 +43,9 @@ public class Exsersize2 {
 		for (int i = 0; i < divisablesByFive.length; i++) {
 			if (divisablesByFive[i] >= 0) {
 				if (i > 0) {
-					System.out.print(", " + i);
+					System.out.print(", " + divisablesByFive[i]);
 					} else {
-						System.out.print(i);
+						System.out.print(divisablesByFive[i]);
 					}
 				
 			}
